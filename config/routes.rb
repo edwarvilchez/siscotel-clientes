@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  # rutas de la aplicacion
+  resources :clientes
   get 'home/index'
   root 'home#index'
 

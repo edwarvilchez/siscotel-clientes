@@ -1,0 +1,22 @@
+Se descargaron las siguientes herramientas
+
+	Ruby Installer v3.2.1p20
+	Rails Installer v7.0.4.2
+	Yarn v1.22.x
+	Sqlite v1.4.x
+	Git v2.22.x
+	Sublime Text v3.0.x
+	Bootstrap v4.6.x
+
+	Para crear un proyecto en Rails
+		tipeamos (en la terminal) el comando rails new XXX
+
+	Para generar un controlador 
+		tipeamos (en la terminal) el comando rails generate o g controller XXX
+
+	Para generar un scaffold
+		tipeamos (en la terminal) rails g scaffold clientes tipo_persona:string nro_doc_id:string fecha_emision:date fecha_vencimiento:date nombre:string apellido:string correo:string telf_ppal:string telf_sec:string
+
+	Para generar la migracion de la BD
+		tipeamos (en la terminal) el comando rails db:migrate
+

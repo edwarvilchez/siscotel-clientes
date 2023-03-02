@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tipo_persona: MyString
+  nro_doc_id: MyString
+  fecha_emision: 2023-03-02
+  fecha_vencimiento: 2023-03-02
+  nombre: MyString
+  apellido: MyString
+  correo: MyString
+  telf_ppal: MyString
+  telf_sec: MyString
+
+two:
+  tipo_persona: MyString
+  nro_doc_id: MyString
+  fecha_emision: 2023-03-02
+  fecha_vencimiento: 2023-03-02
+  nombre: MyString
+  apellido: MyString
+  correo: MyString
+  telf_ppal: MyString
+  telf_sec: MyString
