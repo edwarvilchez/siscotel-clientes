@@ -1,10 +1,9 @@
-<h1>Edit Client</h1>
-
-<%= render "form", cliente: @cliente %>
-
 <br>
-
-<div>
-  <%= link_to "Show Client", @cliente %> |
-  <%= link_to "Back to Clients", clientes_path %>
+<div class="jumbotron">
+  <div class="container">
+    <h1 class="display-4">Edit Client</h1>
+      <%= render "form", cliente: @cliente %><br>
+      <%= link_to "Show Client", @cliente, class:"btn btn-info" %> |
+      <%= link_to "Back to Clients", clientes_path, class:"btn btn-secondary" %>
+  </div>
 </div>

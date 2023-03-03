@@ -16,47 +16,47 @@
 
   <div>
     <%= form.label :tipo_persona, style: "display: block" %>
-    <%= form.text_field :tipo_persona %>
+    <%= form.text_field :tipo_persona, class:"form-control", placeholder:"Add Type of Person", required:"required" %>
   </div>
 
   <div>
     <%= form.label :nro_doc_id, style: "display: block" %>
-    <%= form.text_field :nro_doc_id %>
+    <%= form.text_field :nro_doc_id, class:"form-control", placeholder:"Add ID Number", required:"required" %>
   </div>
 
   <div>
     <%= form.label :fecha_emision, style: "display: flex" %>
-    <%= form.date_field :fecha_emision %>
+    <%= form.date_field :fecha_emision, class:"form-control", required:"required" %>
   </div>
 
   <div>
     <%= form.label :fecha_vencimiento, style: "display: block" %>
-    <%= form.date_field :fecha_vencimiento %>
+    <%= form.date_field :fecha_vencimiento, class:"form-control" %>
   </div>
 </div>
   <div>
     <%= form.label :nombre, style: "display: block" %>
-    <%= form.text_field :nombre %>
+    <%= form.text_field :nombre, class:"form-control", placeholder:"Add First Name", required:"required" %>
   </div>
 
   <div>
     <%= form.label :apellido, style: "display: block" %>
-    <%= form.text_field :apellido %>
+    <%= form.text_field :apellido, class:"form-control", placeholder:"Add Last Name", required:"required" %>
   </div>
 
   <div>
     <%= form.label :correo, style: "display: block" %>
-    <%= form.text_field :correo %>
+    <%= form.text_field :correo, class:"form-control", placeholder:"Add Email", required:"required", type:"email" %>
   </div>
 
   <div>
     <%= form.label :telf_ppal, style: "display: block" %>
-    <%= form.text_field :telf_ppal %>
+    <%= form.text_field :telf_ppal, class:"form-control", placeholder:"Add Phone Number", required:"required" %>
   </div>
 
   <div>
     <%= form.label :telf_sec, style: "display: block" %>
-    <%= form.text_field :telf_sec %>
+    <%= form.text_field :telf_sec, class:"form-control", placeholder:"Add Phone Number", required:"required" %>
   </div>
 
   <div>

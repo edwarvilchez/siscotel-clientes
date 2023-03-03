@@ -1,16 +1,21 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Clients</h1>
-
-    <div id="clientes">
+<div class="card">
+  <div class="card-header">
+    <h1>Clients</h1>
+  </div>
+  <div class="card-body">
+    <div id="clientes" class="field form-group">
       <% @clientes.each do |cliente| %>
-         <%= render cliente %>
+         <%= render cliente %>        
         <p>
-         <%= link_to "Show Client", cliente %>
+         <%= link_to "Show Client", cliente, class:"btn btn-success" %>
         </p>
-         <% end %>    
+         <% end %>   
     </div>
-        <%= link_to "Add New Client", new_cliente_path %>
+        <%= link_to "Add New Client", new_cliente_path, class:"btn btn-info" %>
+  </div>
+</div>
 
 
 
