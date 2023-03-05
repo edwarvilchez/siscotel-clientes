@@ -2,18 +2,18 @@
 
 <div class="card">
   <div class="card-header">
-    <h1>Clients</h1>
+    <h1>Listar Clientes</h1>
   </div>
   <div class="card-body">
     <div id="clientes" class="field form-group">
       <% @clientes.each do |cliente| %>
          <%= render cliente %>        
         <p>
-         <%= link_to "Show Client", cliente, class:"btn btn-success" %>
+         <%= link_to "Mostrar", cliente, class:"btn btn-success" %> | 
+         <%= link_to "Agregar", new_cliente_path, class:"btn btn-info" %>
         </p>
          <% end %>   
-    </div>
-        <%= link_to "Add New Client", new_cliente_path, class:"btn btn-info" %>
+    </div>        
   </div>
 </div>
 
