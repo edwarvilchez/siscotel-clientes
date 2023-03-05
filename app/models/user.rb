@@ -4,6 +4,5 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-         # creamos las relaciones entre tablas
-         has_many :cliente
+         has_many :clientes # creamos las relaciones entre tablas
 end

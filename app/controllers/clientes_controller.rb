@@ -25,7 +25,7 @@ class ClientesController < ApplicationController
 
     respond_to do |format|
       if @cliente.save
-        format.html { redirect_to cliente_url(@cliente), notice: "Cliente was successfully created." }
+        format.html { redirect_to cliente_url(@cliente), notice: "Cliente Creado Exitosamente." }
         format.json { render :show, status: :created, location: @cliente }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class ClientesController < ApplicationController
   def update
     respond_to do |format|
       if @cliente.update(cliente_params)
-        format.html { redirect_to cliente_url(@cliente), notice: "Cliente was successfully updated." }
+        format.html { redirect_to cliente_url(@cliente), notice: "Cliente Actualizado Exitosamente." }
         format.json { render :show, status: :ok, location: @cliente }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class ClientesController < ApplicationController
     @cliente.destroy
 
     respond_to do |format|
-      format.html { redirect_to clientes_url, notice: "Cliente was successfully destroyed." }
+      format.html { redirect_to clientes_url, notice: "Cliente Eliminado Exitosamente." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,7 @@ class ClientesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def cliente_params
-      params.require(:cliente).permit(:tipo_persona, :nro_doc_id, :fecha_emision, :fecha_vencimiento, :nombre, :apellido, :correo, :telf_ppal, :telf_sec, :user_id)
+      params.require(:cliente).permit(:tipo_persona, :nro_doc_id, :fecha_emision, :fecha_vencimiento, :nombre, 
+        :apellido, :correo, :telf_ppal, :telf_sec, :user_id)
     end
 end
