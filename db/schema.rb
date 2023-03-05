@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_03_03_160429) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_03_204351) do
   create_table "clientes", force: :cascade do |t|
     t.string "tipo_persona"
     t.string "nro_doc_id"
@@ -23,6 +23,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_03_160429) do
     t.string "telf_sec"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "user_id"
+    t.index ["user_id"], name: "index_clientes_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|

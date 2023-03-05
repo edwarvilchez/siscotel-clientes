@@ -1,3 +1,7 @@
+
+https://github.com/flatplanet/railsfriends/blob/main/app/controllers/friends_controller.rb
+
+
 Se descargaron las siguientes herramientas
 
 	Ruby Installer v3.2.1p20
@@ -26,5 +30,11 @@ Se descargaron las siguientes herramientas
 		para crear los formularios tipeamos (en la terminal) el comando  rails g devise:views
 		para crear el modelo en la aplicación tipeamos (en la terminal) el comando rails generate devise user
 		para crear el modelo en la BD tipeamos (en la terminal) el comado rails db:migrate
+
+	Para generar las asocioanes entre las tablas del modelo
+		debemos modificar los archivos presentes en el archivo models y agregamos las mismas, posteriormente
+		tipeamos (en la terminal) rails g migration add_user_id_to_cliente user_id:integer:index
+		para agregar los cambios al modelo, tipeamos (en la terminal) rails db:migrate
+
 
 
