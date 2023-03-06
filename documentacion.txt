@@ -36,5 +36,12 @@ Se descargaron las siguientes herramientas
 		tipeamos (en la terminal) rails g migration add_user_id_to_cliente user_id:integer:index
 		para agregar los cambios al modelo, tipeamos (en la terminal) rails db:migrate
 
+	Para crear las validaciones pertinentes a la app, debemos agregar los patrones en el Model Clientes
+	y en esta modificación, agregaremos todos los campos que se necesiten validar
+
+	Tambien debemos realizar las validaciones a nivel de BD, para ello creamos una migración
+	tipeamos (en la terminal) rails g migration add_null_false_to_clientes_fields
+	Para agregar la migración y los cambios creados tipeamos (en la terminal) rails db:migrate
+
 
 
