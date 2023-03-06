@@ -1,7 +1,4 @@
 
-https://github.com/flatplanet/railsfriends/blob/main/app/controllers/friends_controller.rb
-
-
 Se descargaron las siguientes herramientas
 
 	Ruby Installer v3.2.1p20
